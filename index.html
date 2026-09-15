@@ -6,6 +6,9 @@
 
   <title>Mahabub | Personal Website</title>
 
+  <!-- Google Search Console Verification -->
+  <meta name="google-site-verification" content="......." />
+
   <style>
     * {
       margin: 0;
@@ -37,6 +40,15 @@
       color: #d1d5db;
     }
 
+    .profile {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-top: 20px;
+      border: 4px solid white;
+    }
+
     nav {
       background: white;
       text-align: center;
@@ -44,6 +56,7 @@
       box-shadow: 0 2px 10px rgba(0,0,0,0.08);
       position: sticky;
       top: 0;
+      z-index: 100;
     }
 
     nav a {
@@ -87,6 +100,10 @@
       font-weight: bold;
     }
 
+    .social {
+      text-align: center;
+    }
+
     .social a {
       display: inline-block;
       margin: 8px;
@@ -103,26 +120,29 @@
       text-align: center;
       padding: 25px;
     }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 35px;
+      }
+
+      nav a {
+        margin: 0 6px;
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <header><head>
-<title>Example.com homepage</title>
-<meta name="google-site-verification" content="......." />
-</head>
+  <header>
     <h1>Mahabub</h1>
     <p>Welcome to My Personal Website</p>
+
+    <img src="mahabub.jpg" alt="Mahabub" class="profile">
   </header>
-<img src="mahabub.jpg" alt="Mahabub" class="profile">
-  .profile {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
+
   <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
@@ -135,8 +155,8 @@
 
     <div class="card">
       <p>
-        Hello! আমি Mahabub।  
-        এটা আমার Personal Website।
+        Hello! আমি Mahabub।<br>
+        এটা আমার Personal Website।<br>
         এখানে আমার সম্পর্কে কিছু তথ্য ও আমার পছন্দের বিষয় শেয়ার করব।
       </p>
     </div>
@@ -147,7 +167,7 @@
 
     <div class="card">
       <p>
-        আমি Mahabub।  
+        আমি Mahabub।<br>
         প্রযুক্তি, গেমিং এবং নতুন কিছু শেখার প্রতি আমার আগ্রহ আছে।
       </p>
     </div>
@@ -170,10 +190,17 @@
     <div class="card social">
       <p>আমার Social Media:</p>
 
-      <!-- নিজের আসল লিংক এখানে বসাবে -->
-      <a href="#"https://www.facebook.com/share/1EETS4YvBr/ target="_blank">Facebook</a>
-      <a href="#" target="_blank">YouTube</a>
-      <a href="#" target="_blank">Whatsapp
+      <a href="https://www.facebook.com/share/1EETS4YvBr/" target="_blank">
+        Facebook
+      </a>
+
+      <a href="https://www.youtube.com/" target="_blank">
+        YouTube
+      </a>
+
+      <a href="https://wa.me/" target="_blank">
+        WhatsApp
+      </a>
     </div>
   </section>
 
@@ -183,4 +210,3 @@
 
 </body>
 </html>
-  
